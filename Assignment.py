@@ -6,8 +6,6 @@ csv_f = csv.reader(f)
 length_list1 = len(list1)
 no_prod = {}  # dict for number of products to purchase
 temp_amt = {}  # dict for bill at each shop 
-row_count = sum(1 for row in csv_f)
-f.seek(0)
 for row in csv_f:
     row_length = len(row)
     mFlag = -1
@@ -23,17 +21,13 @@ for row in csv_f:
                     temp_amt[row[0]] = temp_amt[row[0]] + float(row[1])
                     mFlag = 0
 
-flag = 0
-max_amt=0
-for i in temp_amt:
-    if(max_amt <= temp_amt[i]):
-        max_amt = temp_amt[i]
-min_amt = max_amt
+flag = -1
+min_amt = temp_amt[max(temp_amt, key = temp_amt.get)]
 for i in temp_amt:
     if((no_prod[i] == length_list1-2) and (min_amt >= temp_amt[i])):
         min_amt = temp_amt[i]
         flag = i
-if (flag):
+if (flag!=-1):
     print(flag, ",", min_amt)
 else:
     print('none')
