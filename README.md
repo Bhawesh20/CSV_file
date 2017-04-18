@@ -9,45 +9,55 @@ Write a program that accepts a price file of baby products(format below) as CSV 
 : It contains shopID, Price,produc1,product2,...
 
 1,4.00,teddy_bear
+
 1,8.00,baby_powder
+
 2,5.00,teddy_bear
+
 2,6.50,baby_powder
+
 3,4.00,pampers_diapers
+
 3,8.00,johnson_wipes
+
 4,5.00,johnson_wipes
+
 4,2.50,cotton_buds
+
 5,4.00,bath_towel
+
 5,8.00,scissor
+
 6,5.00,scissor
 6,6.00,bath_towel,cotton_balls,powder_puff
 
 # Input Format
 Run code in python enabled shell with  format shown below. 
 : Python filename.csv product1 product2 ... (single space between two words)
->Sample Input
->python data.csv teddy_bear baby_powder
->Expected Output
->2, 11.5
+>Sample Input  
+>python data.csv teddy_bear baby_powder  
+>Expected Output  
+>2, 11.5  
 
->Sample Input
->python data.csv pampers_diapers baby_soap
->Expected Output
->none
+>Sample Input      
+>python data.csv pampers_diapers baby_soap   
+>Expected Output     
+>none  
 
->Sample Input
->python data.csv scissor bath_towel
->Expected Output
->6, 11.0
+>Sample Input    
+>python data.csv scissor bath_towel  
+>Expected Output      
+>6, 11.0     
 
->Sample Input
->python data.csv scissor bath_towel powder_puff
->Expected Output
->6, 11.0
+>Sample Input  
+>python data.csv scissor bath_towel powder_puff  
+>Expected Output  
+>6, 11.0  
 
->Sample Input
->python data.csv teddy_bear pampers_diapers
->Expected Output
->none
+>Sample Input  
+>python data.csv teddy_bear pampers_diapers  
+>Expected Output  
+>none  
 
 # Programming language used
  - Python 3
