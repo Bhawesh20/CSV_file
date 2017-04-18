@@ -8,6 +8,7 @@ Write a program that accepts a price file of baby products(format below) as CSV 
  Data FIle Name = data.csv
 : It contains shopID, Price,produc1,product2,...
 
+
 1,4.00,teddy_bear
 
 1,8.00,baby_powder
@@ -28,11 +29,12 @@ Write a program that accepts a price file of baby products(format below) as CSV 
 
 5,8.00,scissor
 
-6,5.00,scissor
+6,5.00,scissor   
 6,6.00,bath_towel,cotton_balls,powder_puff
 
 # Input Format
-Run code in python enabled shell with  format shown below. 
+Run code in python enabled shell with  format shown below.   
+
 : Python filename.csv product1 product2 ... (single space between two words)
 >Sample Input  
 >python data.csv teddy_bear baby_powder  
